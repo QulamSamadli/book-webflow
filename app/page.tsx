@@ -2,7 +2,13 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>Hellow World</div>
+    <div className='container '>
+<div className='bg-[#1B3764]' >
+<p>salam</p>
+</div>
+
+
+    </div>
   )
 }
 
