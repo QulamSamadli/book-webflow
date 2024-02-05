@@ -4,7 +4,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="bg-[#1B3764] py-12 ">
+    <div className="bg-[#1B3764] py-12  ">
       <div className="container  grid grid-cols-2 items-center  gap-8">
         <div className="left grid gap-4">
           <div className="flex items-center gap-2">
@@ -14,14 +14,13 @@ const Home = () => {
             </p>
           </div>
           <h1 className="text-[65px] font-bold text-white">
-            Books are uniquely portable magic{" "}
+            Books are uniquely portable magic
           </h1>
           <p className="text-[#B4C7E7] text-[19px]">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form.
           </p>
           <div className="flex items-center gap-4">
-            {" "}
             <Link href="/order">
               <button className="bg-[#FFCA42] text-center p-3 hover:bg-white hover:text-[#FFCA42] transition duration-300 text-[#1B3764] ">
                 Order Today
@@ -58,7 +57,7 @@ const Home = () => {
           </div>
         </div>
         <div className="right">
-          <Image src="/Book.png" alt="Book" width={592} height={800} />
+          <Image src="/Book.png" alt="Book" width={492} height={300} />
         </div>
       </div>
     </div>
