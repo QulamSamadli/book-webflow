@@ -7,8 +7,8 @@ import { FaAngleDown } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <header className=' bg-[#1B3764]'>
-<div className="flex justify-between container  p-4 ">
+    <header className='  bg-[#1B3764]'>
+<div className="flex justify-between items-center container p-4 ">
 <div className='flex gap-4  '>
    <Link href="/"><Image
    width={118}
@@ -17,21 +17,21 @@ const Navbar = () => {
    alt='Logo'
    /></Link>
    <div className="flex gap-4">
-   <Link href="https://www.facebook.com/" className='border '>
+   <Link href="https://www.facebook.com/" className=' '>
     <Image src="/Facebook.png"
     alt='Facebook'
     width={29}
     height={10}
     />
    </Link>
-   <Link href="https://twitter.com/" className='border'>
+   <Link href="https://twitter.com/" className=''>
     <Image src="/Twitter.png"
     alt='Facebook'
     width={29}
     height={10}
     />
    </Link>
-   <Link href="https://www.linkedin.com/" className='border'>
+   <Link href="https://www.linkedin.com/" className=''>
     <Image src="/LinkedIn.png"
     alt='Facebook'
     width={29}
@@ -48,7 +48,7 @@ const Navbar = () => {
    <Link href="/services">Services</Link>
    <Link href="/contact">Contact</Link>
    <Link href="/basket"><SlBasket /></Link>
-   <Link href="/order"><button className='bg-[#FFCA42] text-center p-2 text-[#1B3764] rounded-lg'>Order Today</button></Link>
+   <Link href="/order"><button className='bg-[#FFCA42] text-center p-1 hover:bg-white hover:text-[#FFCA42] transition duration-300 text-[#1B3764] rounded-lg'>Order Today</button></Link>
     
 </div>
 </div>
