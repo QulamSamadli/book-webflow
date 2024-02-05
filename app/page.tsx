@@ -5,9 +5,9 @@ import React from "react";
 const Home = () => {
   return (
     <div className="bg-[#1B3764] py-12 ">
-      <div className="container  grid grid-cols-2 gap-12 ">
+      <div className="container  grid grid-cols-2 items-center gap-4">
 
-    <div className="left grid">
+    <div className="left grid gap-4">
       <div className="flex items-center gap-2">
         <div className="border-t border-[#FFCA42] w-[34px]"> </div>
         <p className="text-white text-[24px] font-normal italic  ">Welcome to Pages</p>
