@@ -7,8 +7,8 @@ import { FaAngleDown } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <header className='  bg-[#1B3764]'>
-<div className="flex justify-between items-center container p-4 ">
+    <header className='bg-[#1B3764] py-4'>
+<div className=" container flex justify-between items-center ">
 <div className='flex gap-4  '>
    <Link href="/"><Image
    width={118}
