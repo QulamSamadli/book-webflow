@@ -4,7 +4,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="bg-[#1B3764] py-12">
+    <div className="bg-[#1B3764] py-12 ">
       <div className="container  grid grid-cols-2 gap-12 ">
 
     <div className="left grid">
