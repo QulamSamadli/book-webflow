@@ -31,7 +31,7 @@ const Home = () => {
                 Read Free Demo
               </p>
             </div>
-            <div className="grid grid-cols-3 ">
+            <div className=" grid grid-cols-3 ">
               <div className="flex ">
                 <div className="w-[16px] h-[16px] m-2 rounded-full bg-[#FFCA42]"></div>
                 <div>
@@ -62,12 +62,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <h2></h2>
-        <div>
-          
-        </div>
-      </div>
+      
     </div>
   );
 };
