@@ -22,35 +22,35 @@ export default async function Bookstory() {
       <h2 className="text-[45px] font-bold text-[#1B3764] text-center">
         Author’s Book Includes
       </h2>
-      <div className="flex">
-      {book.map(({ id, title, description, pages, length, img }: Book) => {
-        return (
-          <div className="flex" key={id}>
-            <div>
-              <Image src={img} alt={title} width={300} height={400} />
-            </div>
-            <div className="">
-              <h2>{title}</h2>
-              <p>{description}</p>
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        {book.map(({ id, title, description, pages, length, img }: Book) => {
+          return (
+            <div className="flex" key={id}>
               <div>
-                <div>
-                  <div></div>
-                  <p>Pages:</p>
-                  <p>{pages}</p>
-                </div>
-                <div>
-                  <div></div>
-                  <p>Length:</p>
-                  <p>{length}</p>
-                </div>
+                <Image src={img} alt={title} width={300} height={400} />
               </div>
-              <button className="text-center p-3 border border-[#FFCA42] transition duration-300 text-[#1B3764] ">
-                Order Today
-              </button>
+              <div className="">
+                <h2>{title}</h2>
+                <p>{description}</p>
+                <div>
+                  <div>
+                    <div></div>
+                    <p>Pages:</p>
+                    <p>{pages}</p>
+                  </div>
+                  <div>
+                    <div></div>
+                    <p>Length:</p>
+                    <p>{length}</p>
+                  </div>
+                </div>
+                <button className="text-center p-3 border border-[#FFCA42] transition duration-300 text-[#1B3764] ">
+                  Order Today
+                </button>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
       </div>
     </div>
   );
