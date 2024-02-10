@@ -14,20 +14,22 @@ interface Book {
   length: string;
   img: string;
 }
-interface Props {
-    books: Book[]; 
-  }
 
-export default async function Bookstory:React.FC<Props>() {
+export default async function Bookstory() {
   const book = await getBook();
   return (
-    <div className="container">
-      <h2>Author’s Book Includes</h2>
-      {book.map(({ id, title, description, pages, length, img }) => {
+    <div className="container ">
+      <h2 className="text-[45px] font-bold text-[#1B3764] text-center">
+        Author’s Book Includes
+      </h2>
+      <div className="flex">
+      {book.map(({ id, title, description, pages, length, img }: Book) => {
         return (
-          <div key={id}>
-            <Image src={img} alt="" width={300} height={400} />
+          <div className="flex" key={id}>
             <div>
+              <Image src={img} alt={title} width={300} height={400} />
+            </div>
+            <div className="">
               <h2>{title}</h2>
               <p>{description}</p>
               <div>
@@ -38,7 +40,7 @@ export default async function Bookstory:React.FC<Props>() {
                 </div>
                 <div>
                   <div></div>
-                  <p>Length</p>
+                  <p>Length:</p>
                   <p>{length}</p>
                 </div>
               </div>
@@ -49,6 +51,7 @@ export default async function Bookstory:React.FC<Props>() {
           </div>
         );
       })}
+      </div>
     </div>
   );
 }
